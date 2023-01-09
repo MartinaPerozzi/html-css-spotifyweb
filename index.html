@@ -25,20 +25,20 @@
 
 			<div class="sidebar">
 				<div class="logo">
-					<img src="img/logo.svg" alt="Logo">
+					<img class="logo" src="img/logo.svg" alt="Logo">
 				</div>
 
 				<nav>
-					<ul>
-						<li>Home</li>
-						<li>Cerca</li>
-						<li>La tua libreria</li>
+					<ul class="icon-nav">
+						<li><img src="img/home.svg" alt=""> <span>Home</span> </li>
+						<li><img src="img/search.svg" alt=""> <span>Cerca</span> </li>
+						<li><img src="img/libreria.svg" alt=""> <span>La tua libreria</span> </li>
 					</ul>
 
 					<section class="playlist">
 						<ul>
 							<li><h2>PLAYLIST</h2></li>
-							<li>Crea Playlist</li>
+							<li class="flex-container"> <i class="fa-solid fa-square-plus"></i>Crea Playlist</li>
 							<li>Nome Playlist</li>
 							<li>Nome Playlist</li>
 							<li>Nome Playlist</li>
@@ -50,6 +50,20 @@
 					</section>
 
 				</nav>
+				<div class="flex-container sidebar-footer">
+					<div class="sidebar-footer">
+						<div class="flex-container">
+							<img src="img/download.svg" alt="Profile">
+							<span>Installa l'app</span>
+						</div>
+						<hr>
+						<div class="flex-container">
+							<img id="id" src="img/profile.svg" alt="Profile">
+							<h3>John Doe</h3>
+						</div>
+				
+					</div>
+				</div>
 
 			</div>
 
@@ -59,7 +73,7 @@
 
 				<!-- HEADER -->
 				<header class="flex-container">
-					<div>EFFETTUA L'UPGRADE</div>	
+					<div> <a href="#">EFFETTUA L'UPGRADE</a></div>	
 				</header>
 
 				<!-- MAIN -->
@@ -171,8 +185,9 @@
 					</section>
 
 				</main>
-		</div>
+			</div>
 
+		</div>
 	</div>
 
 <!-- FOOTER -->
