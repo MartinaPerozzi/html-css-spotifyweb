@@ -3,9 +3,16 @@ body{
 	font-family: sans-serif;
 }
 .container {
-	width: 1200px;
+	/* max-width: 1200px; */
 	margin: 0 auto;
 }
+
+.flex-container {
+	display: flex;
+}
+
+
+
 
 .clearfix::after {
 	content: '';
