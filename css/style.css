@@ -28,6 +28,13 @@ body{
     padding:1rem 0.6rem;
 }
 
+.logo-sm{
+    width:30px;
+    display:none;
+    margin:auto;
+    padding:0.5rem 0rem;
+}
+
 /* SIDEBAR Nav icon */
 .icon-nav>li{
     display:flex;
@@ -88,27 +95,25 @@ header{
     background-color: rgba(0, 0, 0, 0.5);
     position:fixed;
     width:100%;
-    justify-content: flex-end;
     align-items: center;
 }
-header>div{
+.label{
     padding: 0.5rem 2rem;
 }
+
 
 header a {
     color: white;
     border: 1px solid white;
     border-radius: 2rem;
     padding: 0.5rem 2rem;
-    margin-right: 16rem;
     font-size: 0.9rem;
 }
 
 /* MAIN */
 main{
     padding-top:5rem;
-    padding-right:2rem;
-    padding-left:2rem;
+    padding-left:1rem;
     text-align: center;
     color:grey;
     font-size: 0.9rem;
@@ -119,6 +124,7 @@ main{
     width:100%;
     text-align: center;
     padding-top:1rem;
+    font-size: 0.7rem;
 }
 .main-nav-bar li{
     display:inline;
@@ -126,8 +132,14 @@ main{
 }
 
     /* RECENT */
+.row img{
+    padding-right: 1rem;
+}
 .recent>h2{
     padding-bottom:2rem;
+}
+.played{
+    flex-wrap: wrap;
 }
 
     /* CREATED */
@@ -185,6 +197,9 @@ footer i{
 .footer-center{
     flex-direction: column;
 }
+.center{
+    width:90%;
+}
 /* footer right */
 .footer-right {
     font-size: 0.8rem;
@@ -207,7 +222,27 @@ footer i{
 }
 .block{
     display:inline-block;
-    width:500px;
+    min-width:500px;
 }
 
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+
+    .sidebar span, 
+    .sidebar .logo,
+    .playlist,
+    .sidebar-footer span{
+        display:none;
+    }
+
+    .logo-sm{
+        display:block;
+    }
+
+    .sidebar{
+        width:20px;
+        min-width:60px;
+    }
+
+}
