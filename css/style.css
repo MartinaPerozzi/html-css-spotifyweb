@@ -1,8 +1,10 @@
 body{
     background-color: #141922;
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--size-principal);
 }
-/* TOP-CONTENT */
 
+/* TOP-CONTENT */
 .big{
     height: calc(100vh - 90px);
     max-width: 100%;
@@ -19,21 +21,14 @@ body{
 }
 .sidebar li{
     padding:0.6rem 1rem;
-
 }
+
 .logo{
-    width:85%;
+    width:180px;
     padding:1rem 0.6rem;
 }
-    /* icons */
-/* #home::before{
-    content: url(../img/home.svg);
-    display:inline-block;
-    width:30px;
-    margin:0rem 0.5rem;   
-} */
 
-/* icons */
+/* SIDEBAR Nav icon */
 .icon-nav>li{
     display:flex;
     align-items: center;
@@ -44,7 +39,7 @@ body{
 .sidebar-footer img{
     width:30px;
 }
-    /* playlist */
+/* SIDEBAR playlist */
 .playlist h2{
     color:white;
     padding-top:0.8rem;
@@ -57,7 +52,7 @@ body{
 .playlist .flex-container{
     align-items: center;
 }
-/* sidebar footer */
+/* SIDEBAR footer */
 .sidebar-footer{
     margin-top:auto;
     width:90%;
@@ -84,7 +79,8 @@ body{
     font-size: 0.5rem;
     border:0.3px solid grey;
 }
-/* RIGHT-CONTENT */
+
+/* ALL-CONTENT */
 
 /* HEADER */
 header{
@@ -96,11 +92,15 @@ header{
     align-items: center;
 }
 header>div{
+    padding: 0.5rem 2rem;
+}
+
+header a {
     color: white;
-    border:1px solid white;
+    border: 1px solid white;
     border-radius: 2rem;
     padding: 0.5rem 2rem;
-    margin-right:16rem;
+    margin-right: 16rem;
     font-size: 0.9rem;
 }
 
@@ -114,44 +114,23 @@ main{
     font-size: 0.9rem;
     overflow: auto;
 }
-
+    /* Main nav bar  */
 .main-nav-bar{
     width:100%;
     text-align: center;
+    padding-top:1rem;
 }
 .main-nav-bar li{
     display:inline;
     padding:0.6rem;
 }
 
-
-/* RECENTLY PLAYED */
-
-main h2{
-    color:white;
-    font-size:1.6rem;
-    padding:2rem 0rem 1.5rem 0rem;
-    text-align: left;
-}
-
-h3{
-    color:white;
-    padding:0.8rem 0rem 0.5rem 0rem;
-    font-size:1rem;
-    text-align: center;
-}
-h4{
-    color:white;
-    font-size: 0.9rem;
-}
-.row{
-    gap:1rem;
-}
+    /* RECENT */
 .recent>h2{
     padding-bottom:2rem;
 }
 
-/* CREATED */
+    /* CREATED */
 section .info{
     text-align: left;
     padding-bottom:0.9rem;
@@ -159,11 +138,10 @@ section .info{
 section h2{
     padding-bottom:0.8rem;
 }
-/* POPULAR */
+    /* POPULAR */
 .dot>img{
     border-radius:50%;
 }
-
 
 /* FOOTER */
 footer{
@@ -171,30 +149,65 @@ footer{
     color:grey;
     font-size: 0.8rem;
     justify-content: space-between;
+    height: 90px;
 }
 footer .flex-container{
-    height:90px;
     align-items: center;
+    justify-content: space-between;
+    gap:0.5rem;
 }
-.listening{
-    width:110px;
-}
+
 footer img{
     width:60px;
     padding-left:0.5rem;
 }
-/* left side */
+/* footer left side */
 .footer-leftside{
     gap:0.5rem;
+    width:250px;
 }
-/* center */
+.listening{
+    gap:1rem;
+}
+footer i{
+    padding:0.5rem;
+}
+/* footer center */
 .footer-center i{
     font-size: 1.5rem;
     color:white;
 }
+.footer-center.flex-container{
+    justify-content: center;
+    gap:0.5rem;
+}
 
+.footer-center{
+    flex-direction: column;
+}
+/* footer right */
 .footer-right {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: white;
     margin-right:16px;
+    align-items: center;
 }
+.bar{
+    width:140px;
+    background-color: rgb(95, 95, 95);
+    height:3px;
+    display:inline-block;
+    border-radius: 3rem;
+}
+.percentage{
+    width:20%;
+    background-color: white;
+    height:100%;
+    border-radius: 3rem;
+}
+.block{
+    display:inline-block;
+    width:500px;
+}
+
+

@@ -6,6 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Spotify Web</title>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+	
 	<!-- link -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 	<link rel="stylesheet" href="./css/reset.css">
@@ -22,7 +27,6 @@
 		<div class="big flex-container">
 
 			<!-- SIDE-BAR -->
-
 			<div class="sidebar">
 
 				<div class="logo">
@@ -36,7 +40,7 @@
 						<li><img src="img/libreria.svg" alt=""> <span>La tua libreria</span> </li>
 					</ul>
 
-					<section class="playlist">
+					<div class="playlist">
 						<ul>
 							<li><h2>PLAYLIST</h2></li>
 							<li class="flex-container"> <i class="fa-solid fa-square-plus"></i>Crea Playlist</li>
@@ -48,7 +52,7 @@
 							<li>Nome Playlist</li>
 							<li>Nome Playlist</li>
 						</ul>
-					</section>
+					</div>
 				</nav>
 
 				<div class="flex-container sidebar-footer">
@@ -68,9 +72,9 @@
 
 			</div>
 
-			<!-- RIGHT-CONTENT -->
+			<!-- ALL-CONTENT -->
 
-			<div class="right-content flex-container">
+			<div class="all-content flex-container">
 
 				<!-- HEADER -->
 				<header class="flex-container">
@@ -92,7 +96,7 @@
 							</ul>
 						</nav>
 					</div>
-
+				<!-- Recent -->
 					<section class="recent">
 						<h2>Recently played</h2>
 
@@ -105,7 +109,7 @@
 
 							<div class="col-2">
 								<img src="img/stranger.jpeg" alt="Stranger Things">
-								<h3> Stranger Things, Vol.1(a Netflix Original Series Soundtrack)</h3>
+								<h3> Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
 								<div>Kyle Dixon & Micheal Stein</div>
 							</div>
 
@@ -145,6 +149,7 @@
 
 					</section>
 
+				<!-- Created -->
 					<section class="created">
 						<h2>Creato per John Doe</h2>
 						<div class="info">Più ascolti, più accurati saranno i suggerimenti.</div>
@@ -165,6 +170,7 @@
 					
 					</section>
 
+				<!-- Popular -->
 					<section class="most-popular">
 						<h2>Artisti più popolari</h2>
 						<div class="info">Più ascolti, più accurati saranno i suggerimenti.</div>
@@ -186,6 +192,7 @@
 					</section>
 
 				</main>
+
 			</div>
 
 		</div>
@@ -196,31 +203,48 @@
 
 		<div class="flex-container footer-leftside">
 
-			<img src="img/sinister.jpeg" alt="Sinister">
-			<div class="listening">
-				<h4>Sinister</h4>
-				<div>Brano nome</div>
+				
+				<div class="listening flex-container">
+					<img src="img/sinister.jpeg" alt="Sinister">
+					<div class="flex-box">
+						<h4>Sinister</h4>
+						<div>Brano nome</div>
+					</div>
+				</div>
+			
+			<div>
+				<i class="fa-regular fa-heart"></i>
+				<i class="fa-regular fa-folder"></i>
 			</div>
-			<i class="fa-regular fa-heart"></i>
-			<i class="fa-regular fa-folder"></i>
 
 		</div>
 
 		<div class="flex-container footer-center">
-			<div>
+			<div class="flex-container">
 				<i class="fa-solid fa-shuffle"></i>
 				<i class="fa-solid fa-backward-step"></i>
 				<i class="fa-regular fa-circle-play"></i>
 				<i class="fa-solid fa-forward-step"></i>
 				<i class="fa-solid fa-arrow-rotate-right"></i>
 			</div>
+			<div class="flex-container">
+				<span>0:25</span>
+				<div class="bar block">
+					<div class="percentage"></div>
+				</div>
+				<span>4:35</span>
+			</div>
 		
 		</div>
 
 		<div class="flex-container footer-right">
 			<div>
-				<i class="fa-solid fa-shuffle"></i>
-				<i class="fa-solid fa-backward-step"></i>
+				<i class="fa-solid fa-list-ul"></i>
+				<i class="fa-solid fa-desktop"></i>
+				<i class="fa-solid fa-volume-high"></i>
+				<div class="bar">
+					<div class="percentage"></div>
+				</div>
 				
 			</div>
 		

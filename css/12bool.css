@@ -7,13 +7,8 @@
 }
 .row{
     display:flex;
+    gap:1rem;
 }
-
-/* Reset Column Settings */
-
-/* [class*="col-"]{
-    flex: 0 0 auto;
-} */
 
 /* Column */
 
