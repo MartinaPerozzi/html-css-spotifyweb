@@ -1,0 +1,50 @@
+/* TOP-CONTENT */
+.top-content{
+    height: calc (100vh - 90px);
+}
+
+.flex-container{
+    display:flex;
+}
+/* SIDE-BAR */
+.sidebar{
+    width:15rem;
+    background-color: black;
+    height:700px;
+}
+
+.right-content{
+    background-color: #141922;
+    flex-direction: column;
+}
+/* HEADER */
+header{
+    height:4rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    position:fixed;
+    width:100%;
+}
+
+/* MAIN */
+main{
+    padding-top:5rem;
+}
+
+.nav-bar{
+    width:100%;
+    text-align: center;
+}
+.nav-bar li{
+    display:inline;
+    padding:0.6rem;
+}
+
+
+
+
+
+/* FOOTER */
+footer{
+    height:90px;
+    background-color:#282828;
+}
