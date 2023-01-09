@@ -5,11 +5,13 @@ body{
 
 .big{
     height: calc(100vh - 90px);
+    max-width: 100%;
 }
 
 /* SIDE-BAR */
 .sidebar{
-    width:15rem;
+    width:250px;
+    min-width: 250px;
     background-color: black;
     color:grey;
     display:flex;
@@ -138,9 +140,15 @@ h3{
     font-size:1rem;
     text-align: center;
 }
-
+h4{
+    color:white;
+    font-size: 0.9rem;
+}
 .row{
     gap:1rem;
+}
+.recent>h2{
+    padding-bottom:2rem;
 }
 
 /* CREATED */
@@ -149,7 +157,7 @@ section .info{
     padding-bottom:0.9rem;
 }
 section h2{
-    padding-bottom:0.4rem;
+    padding-bottom:0.8rem;
 }
 /* POPULAR */
 .dot>img{
@@ -157,9 +165,36 @@ section h2{
 }
 
 
-
 /* FOOTER */
 footer{
+    background-color: #282828;
+    color:grey;
+    font-size: 0.8rem;
+    justify-content: space-between;
+}
+footer .flex-container{
     height:90px;
-    background-color:#282828;
+    align-items: center;
+}
+.listening{
+    width:110px;
+}
+footer img{
+    width:60px;
+    padding-left:0.5rem;
+}
+/* left side */
+.footer-leftside{
+    gap:0.5rem;
+}
+/* center */
+.footer-center i{
+    font-size: 1.5rem;
+    color:white;
+}
+
+.footer-right {
+    font-size: 1rem;
+    color: white;
+    margin-right:16px;
 }
