@@ -3,7 +3,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: var(--size-principal);
 }
-
+a{
+    color:grey;
+}
 /* TOP-CONTENT */
 .big{
     height: calc(100vh - 90px);
@@ -104,15 +106,17 @@ body{
 
 /* HEADER */
 header{
-    min-height:4rem;
+    min-height:5rem;
     background-color: rgba(0, 0, 0, 0.5);
     position:fixed;
     width:calc(100% - 250px);
     align-items: center;
+    z-index:1;
 }
 .label{
     padding: 0.5rem 2rem;
     justify-content: flex-end;
+    margin-top:0.8rem;
 }
 
 header a {
@@ -139,7 +143,7 @@ main{
     width:100%;
     text-align: center;
     padding-top:1rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 1.8rem;
 }
 .main-nav-bar li{
@@ -241,7 +245,7 @@ footer i{
     background-color: white;
     border-radius: 50%;
     position: absolute;
-    top:-7px;
+    top:-6px;
     left:19%;
     display:none;
 }
@@ -272,7 +276,8 @@ footer i{
     .sidebar span, 
     .sidebar .logo,
     .playlist,
-    .sidebar-footer span{
+    .sidebar-footer span,
+    .sidebar a{
         display:none;
     }
 
@@ -287,6 +292,10 @@ footer i{
     header{
         width: calc(100% - 60px);
     }
+    .sidebar-footer>*{
+        justify-content: center;
+    }
+    
 
 }
 
@@ -337,7 +346,8 @@ span:hover{
     background-color:rgb(19, 196, 19);
 }
 
-i:hover {
+i:hover,
+a:hover {
     color:white;
 }
 
