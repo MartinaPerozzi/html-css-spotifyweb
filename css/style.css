@@ -24,6 +24,7 @@ a{
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    height: calc(100%);
 }
 /* SIDEBAR Hide Scrollbar Chrome*/
 .sidebar::-webkit-scrollbar {
@@ -46,7 +47,7 @@ a{
     padding:0.5rem 0rem;
 }
 .icon-nav li:first-child{
-    border-left: 4px solid green;
+    border-left: 4px solid rgb(10, 216, 10);
 }
 
 
@@ -200,14 +201,18 @@ footer{
     color:grey;
     font-size: 0.8rem;
     height: 90px;
+    align-items: center;
+    justify-content: center;
 }
 
 footer .flex-container{
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap:0.5rem;
 }
-
+.center{
+    justify-content: center;
+}
 footer img{
     width:60px;
     padding-left:0.5rem;
@@ -215,7 +220,7 @@ footer img{
 /* footer LEFT SIDE */
 .footer-leftside{
     gap:0.5rem;
-    width:250px;
+    /* width:250px; */
 }
 .listening{
     gap:1rem;
@@ -317,7 +322,10 @@ footer i{
     .sidebar-footer>*{
         justify-content: center;
     }
-    
+    .footer-leftside .fa-regular,
+    .footer-right .bar{
+        display:none;
+    }
 
 }
 
