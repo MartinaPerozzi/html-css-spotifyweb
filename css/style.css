@@ -21,9 +21,12 @@ a{
     display:flex;
     flex-direction: column;
     padding-bottom: 1rem;
-    overflow: auto;
+    /* overflow: auto;
     -ms-overflow-style: none;
-    scrollbar-width: none;
+    scrollbar-width: none; */
+}
+.playlist{
+    overflow: auto;
 }
 /* SIDEBAR Hide Scrollbar Chrome*/
 .sidebar::-webkit-scrollbar {
@@ -45,6 +48,10 @@ a{
     margin:auto;
     padding:0.5rem 0rem;
 }
+.icon-nav li:first-child{
+    border-left: 4px solid green;
+}
+
 
 /* SIDEBAR Nav icons */
 .icon-nav>li{
@@ -149,6 +156,18 @@ main{
 .main-nav-bar li{
     display:inline;
     padding:0.6rem;
+}
+/* Green element */
+.mark{
+    position:relative;
+}
+.mark:after{
+    content: '____';
+    font-weight: bolder;
+    color:rgb(16, 205, 16);
+    position:absolute;
+    top:5px;
+    left:30px;
 }
 
     /* RECENT */
