@@ -21,12 +21,9 @@ a{
     display:flex;
     flex-direction: column;
     padding-bottom: 1rem;
-    /* overflow: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none; */
-}
-.playlist{
     overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 /* SIDEBAR Hide Scrollbar Chrome*/
 .sidebar::-webkit-scrollbar {
@@ -74,8 +71,14 @@ a{
     font-size: 2rem;
     padding-right:0.5rem;
 }
-.playlist .flex-container{
+.playlist .span{
     align-items: center;
+}
+.playlist-scroll{
+    overflow: auto;
+    flex-direction: column;
+    list-style: none;
+    align-items: flex-start;
 }
 /* SIDEBAR footer */
 .sidebar-footer{
