@@ -96,6 +96,10 @@ body{
     border:0.3px solid grey;
 }
 
+#home, #name{
+    color:white;
+    font-weight: bolder;
+}
 /* ALL-CONTENT */
 
 /* HEADER */
@@ -228,6 +232,9 @@ footer i{
     min-width:100%;
     position:relative;
 }
+.bar{
+    position:relative;
+}
 .small-dot{
     width:15px;
     height:15px;
@@ -235,7 +242,7 @@ footer i{
     border-radius: 50%;
     position: absolute;
     top:-7px;
-    left:19px;
+    left:19%;
     display:none;
 }
 
@@ -247,6 +254,11 @@ footer i{
 }
 .footer-right>.flex-container{
     gap:0rem;
+}
+.mini{
+    width:13px;
+    height:13px;
+    top:-5px;
 }
 /* Spacing cards */
 .row>*{
@@ -278,19 +290,22 @@ footer i{
 
 }
 
-
-/* EFFECTS */
+/*************
+ EFFECTS 
+ *************/
+/* PLAY cards effect */
 .img{
     position:relative;
+    display: flex;
+    justify-content: center;
 }
 .play{
     display: none;
     position:absolute;
     font-size: 4rem;
-    top:64px;
-    left:68px;
     text-align: center;
     color: rgb(218, 218, 218);
+    align-self:center;
 }
 .col-2:hover img{
     filter: brightness(50%);
@@ -298,3 +313,37 @@ footer i{
 .col-2:hover .play {
     display:block;
 }
+/* TEXT EFFECTS */
+li:hover,
+span:hover{
+    color:white;
+}
+/* BUTTON EFFECT */
+.label:hover a{
+    transform: scale(110%);
+}
+
+/* PLAYBAR  */
+.listening:hover .song{
+    text-decoration: underline;
+}
+
+.center:hover .small-dot,
+.footer-right:hover .small-dot{
+    display:block;
+}
+.center:hover .percentage,
+.footer-right:hover .percentage{
+    background-color:rgb(19, 196, 19);
+}
+
+i:hover {
+    color:white;
+}
+
+
+/* .main-nav-bar li:first-child:after{
+    content:'__';
+    border-bottom:1px solid green;
+    border-width: 2px;
+} */
