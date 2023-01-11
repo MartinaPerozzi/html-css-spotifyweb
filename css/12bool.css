@@ -130,26 +130,6 @@
 
     /* DISPLAYS */
 
-    .d-flex-xl {
-        display: flex;
-    }
-
-    .d-block-xl {
-        display: block;
-    }
-
-    .d-inline-block-xl {
-        display: inline-block;
-    }
-
-    .d-inline-xl {
-        display: inline;
-    }
-
-    .d-none-xl {
-        display: none;
-    }
-
     .col-xl-1 {
         flex-basis: calc((100% / 12) * 1);
         max-width: calc((100% / 12) * 1);
@@ -632,26 +612,6 @@
 @media screen and (max-width: 480px) {
 
     /* DISPLAYS */
-
-    .d-flex-xs {
-        display: flex;
-    }
-
-    .d-block-xs {
-        display: block;
-    }
-
-    .d-inline-block-xs {
-        display: inline-block;
-    }
-
-    .d-inline-xs {
-        display: inline;
-    }
-
-    .d-none-xs {
-        display: none;
-    }
 
     .col-xs-1 {
         flex-basis: calc((100% / 12) * 1);

@@ -326,8 +326,13 @@ footer i{
     .footer-right .bar{
         display:none;
     }
-
 }
+@media screen and (max-height: 600px) {
+    header .label{
+        display:none;
+    }
+}
+
 
 /*************
  EFFECTS 
