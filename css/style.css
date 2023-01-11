@@ -38,6 +38,8 @@ a{
 .logo{
     width:180px;
     padding:1rem 0.6rem;
+    position: fixed;
+    background-color: black;
 }
 
 .logo-sm{
@@ -49,7 +51,9 @@ a{
 .icon-nav li:first-child{
     border-left: 4px solid rgb(10, 216, 10);
 }
-
+.sidebar nav{
+    margin-top:6rem; 
+}
 
 /* SIDEBAR Nav icons */
 .icon-nav>li{
@@ -63,6 +67,10 @@ a{
     width:30px;
 }
 /* SIDEBAR playlist */
+.playlist li{
+    align-items: center;
+}
+
 .playlist h2{
     color:white;
     padding-top:0.8rem;
@@ -80,6 +88,10 @@ a{
     flex-direction: column;
     list-style: none;
     align-items: flex-start;
+    height:190px;
+}
+.playlist-scroll::-webkit-scrollbar {
+    display: none;
 }
 /* SIDEBAR footer */
 .sidebar-footer{
@@ -387,3 +399,22 @@ a:hover {
         display:none;
     }
 }
+/* @media screen and (max-width: 900px) {
+ .img{
+    width:15rem;
+    object-fit: cover;
+    margin-right:1rem;
+    
+ }
+.recent{
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
+}
+    
+.recent::-webkit-scrollbar {
+    display: none;
+}
+} */
