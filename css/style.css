@@ -24,7 +24,7 @@ a{
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    height: calc(100%);
+    height: 100%;
 }
 /* SIDEBAR Hide Scrollbar Chrome*/
 .sidebar::-webkit-scrollbar {
@@ -327,16 +327,11 @@ footer i{
         display:none;
     }
 }
-@media screen and (max-height: 600px) {
-    header .label{
-        display:none;
-    }
-}
 
 
 /*************
- EFFECTS 
- *************/
+EFFECTS 
+*************/
 /* PLAY cards effect */
 .img{
     position:relative;
@@ -386,9 +381,9 @@ a:hover {
     color:white;
 }
 
-
-/* .main-nav-bar li:first-child:after{
-    content:'__';
-    border-bottom:1px solid green;
-    border-width: 2px;
-} */
+/* BONUS */
+@media screen and (max-height: 600px) {
+    header .label{
+        display:none;
+    }
+}
