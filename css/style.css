@@ -398,7 +398,7 @@ a:hover {
 
 /* BONUS */
 /* Bonus 1 */
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
  
 .row{
     overflow:auto;
@@ -413,14 +413,14 @@ a:hover {
 }
 
 /* Bonus 4 */
-.footer-right .bar{
+/* .footer-right .bar{
 
     display:none;
 }
 .footer-right>.flex-container:hover .bar{
     display:block;
 }
-}
+} */ 
 
 @media screen and (max-width: 1200px) and (min-width: 800px) {
 .play {
