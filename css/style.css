@@ -413,14 +413,15 @@ a:hover {
 }
 
 /* Bonus 4 */
-/* .footer-right .bar{
+@media screen and (max-width: 800px) {
+.footer-right .bar{
 
     display:none;
 }
 .footer-right>.flex-container:hover .bar{
     display:block;
 }
-} */ 
+}  
 
 @media screen and (max-width: 1200px) and (min-width: 800px) {
 .play {
